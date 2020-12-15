@@ -1,6 +1,7 @@
 name: hptuning
 channels:
   - conda-forge
+  - anaconda
   - defaults
 dependencies:
   - ca-certificates=2019.11.28=hecc5488_0
@@ -12,6 +13,12 @@ dependencies:
   - pip=20.0.2=py37_1
   - setuptools=45.1.0=py37_0
   - wheel=0.34.1=py37_0
+  - jupyter==1.0.0
+  - pandas==1.*
+  - scikit-learn==0.22.1
+  - scikit-optimize==0.8.1
+  - scipy
+  - bayesian-optimization==1.0.1
   - pip:
     - numpy=1.18.1=py37hde6bac1_0
     - libgfortran=3.0.1=0
@@ -19,7 +26,7 @@ dependencies:
     - sqlite=3.30.1=ha441bb4_0
     - openssl=1.1.1d=h0b31af3_0
     - lightgbm=2.3.0=py37h0a44026_0
-    - libcxxabi=4.0.1=hcfea43d_1
+    - libcxxabi=4.0.1=hcfea43d_1cond 
     - libffi=3.2.1=h475c297_4
     - tk=8.6.8=ha441bb4_0
     - libopenblas=0.3.7=hd44dcd8_1
@@ -32,8 +39,7 @@ dependencies:
     - llvm-openmp=9.0.1=h28b9765_2
     - appnope==0.1.0
     - attrs==19.3.0
-    - backcall==0.1.0
-    - bayesian-optimization==1.0.1
+    - backcall==0.1.0    
     - bleach==3.1.0
     - cmake==3.16.3
     - cycler==0.10.0
@@ -47,8 +53,7 @@ dependencies:
     - ipywidgets==7.5.1
     - jedi==0.16.0
     - jinja2==2.11.1
-    - jsonschema==3.2.0
-    - jupyter==1.0.0
+    - jsonschema==3.2.0   
     - jupyter-client==5.3.4
     - jupyter-console==6.1.0
     - jupyter-core==4.6.1
@@ -59,7 +64,6 @@ dependencies:
     - nbconvert==5.6.1
     - nbformat==5.0.4
     - notebook==6.0.3
-    - pandas==1.0.0
     - pandocfilters==1.4.2
     - parso==0.6.0
     - pexpect==4.8.0
@@ -76,9 +80,6 @@ dependencies:
     - pyyaml==5.3.1
     - pyzmq==18.1.1
     - qtconsole==4.6.0
-    - scikit-learn==0.22.1
-    - scikit-optimize==0.8.1
-    - scipy==1.4.1
     - send2trash==1.5.0
     - six==1.14.0
     - sklearn==0.0
